@@ -18,7 +18,7 @@ namespace SendEmailWebApplication
             this.logger = logger;
         }
 
-        public void SendEmailDefault()
+        public void SendEmailDefault()//Этот метод позволяет отправлять email с помощью пакета стандартного пакета 
         {                     
             try
             {
@@ -32,7 +32,7 @@ namespace SendEmailWebApplication
 
                 using (SmtpClient client = new SmtpClient("smtp.gmail.com"))
                 {
-                    client.Credentials = new NetworkCredential("kolekdoma1986@gmail.com", "Password");
+                    client.Credentials = new NetworkCredential("kolekdoma1986@gmail.com", "Password");//Здесь нужно ввести данные акаунта
                     client.Port = 587;
                     client.EnableSsl = true;
 
@@ -47,7 +47,7 @@ namespace SendEmailWebApplication
             }
         }
 
-        public void SendEmailCustom()
+        public void SendEmailCustom()//Этот метод позволяет отправлять email с помощью пакета MailKit
         {
             try
             {
@@ -60,7 +60,7 @@ namespace SendEmailWebApplication
                 using(MailKit.Net.Smtp.SmtpClient client = new MailKit.Net.Smtp.SmtpClient())
                 {
                     client.Connect("smtp.gmail.com", 465, true);
-                    client.Authenticate("kolekdoma1986@gmail.com", "Password");
+                    client.Authenticate("kolekdoma1986@gmail.com", "Password");//Здесь нужно ввести данные акаунта
                     client.Send(message);
 
                     client.Disconnect(true);
