@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\source\\repos\\SendEmailWebApplication\\SendEmailWebApplication\\SendEmailWebApplication.csproj": {}
+    "C:\\Users\\User\\Source\\Repos\\SendingEmail\\SendEmailWebApplication\\SendEmailWebApplication.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\source\\repos\\SendEmailWebApplication\\SendEmailWebApplication\\SendEmailWebApplication.csproj": {
+    "C:\\Users\\User\\Source\\Repos\\SendingEmail\\SendEmailWebApplication\\SendEmailWebApplication.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\source\\repos\\SendEmailWebApplication\\SendEmailWebApplication\\SendEmailWebApplication.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Source\\Repos\\SendingEmail\\SendEmailWebApplication\\SendEmailWebApplication.csproj",
         "projectName": "SendEmailWebApplication",
-        "projectPath": "C:\\Users\\User\\source\\repos\\SendEmailWebApplication\\SendEmailWebApplication\\SendEmailWebApplication.csproj",
+        "projectPath": "C:\\Users\\User\\Source\\Repos\\SendingEmail\\SendEmailWebApplication\\SendEmailWebApplication.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\source\\repos\\SendEmailWebApplication\\SendEmailWebApplication\\obj\\",
+        "outputPath": "C:\\Users\\User\\Source\\Repos\\SendingEmail\\SendEmailWebApplication\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -43,6 +43,12 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "MailKit": {
+              "target": "Package",
+              "version": "[2.13.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
